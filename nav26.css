@@ -1,0 +1,555 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 37, 37);
+}
+
+
+/* Desk-section */
+
+
+.container{
+    background-color: blueviolet;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 0px 0px black;
+}
+
+nav .logo{
+    margin-left: 1rem;
+}
+.logo h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav .desk{
+    display: flex;
+    margin-top: 5px;
+    
+}
+.desk li{
+    margin-right: 1rem;
+    list-style: none;
+}
+
+.desk li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.btn{
+    order: 4;
+    font-size: 2rem;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+}
+
+.mob{
+    display: none;
+}
+
+/* mob-section */
+@media  (max-width:400px) {
+    nav .logo{
+        margin-left: 0px;
+    }
+    .logo h2{
+        font-size: 30px;
+        
+    }
+
+    nav .desk{
+display: none !important;
+}    
+.btn{
+    display: block;
+    margin-right: .4rem;
+}
+nav{
+    box-shadow: 0px 4px 0px 0px black;
+}
+nav .mob{
+    display: block;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    transition: 1s initial;
+}
+nav .mob{
+    display: none;
+    transition: 3s initial;
+
+
+}
+
+.mob li{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+
+    
+    
+}
+.mob li:hover{
+    background-color: hsl(0, 0%, 0%);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 40px;
+    transition: .7s ease-in;
+   
+ }
+ .mob li.active{
+     
+    background-color: hsl(0, 0%, 0%);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 40px;
+ }
+
+
+.mob li a{
+
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+
+    
+}
+.hero .content  {
+position: relative;
+left: -1%;
+top: 50%;
+
+
+}
+.hero .content  .head{
+ width: 250px;
+ margin-left: 60px;
+ border-radius: 20px;
+}
+.hero .content  .head h3{
+    font-size: 30px;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.gallery > div {
+    flex: 50%;
+}
+.gallery .card{
+    margin-bottom: 15px;
+   margin-left: 1.7rem;
+}
+
+.item {
+    border-radius:20px;
+text-align: center;
+
+background-color: blueviolet;
+}
+.item img{
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.item .spbg{
+    margin-top: -5px;
+      background-color: #e100f5;
+  }
+
+
+  .about .ab{
+     
+      flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -40%;
+  }
+  .about .ab .my img{
+      border-radius: 100px;
+      width: 250px;
+  }
+  .about .ab .am{
+      width: 300px;
+      border-radius: 0px 0px 30px 30px;
+      padding: 10px;
+  }
+
+  .about .ab .am p{
+      width: 275px;
+      font-size:20x;
+   padding: 10px 0px 10px 10px;
+      
+
+  }
+  .about .ab .am h2{
+    padding: 20px 0px 10px 10px;
+       text-align: left;
+  }
+
+
+  .contact .detail .lable .para{
+      width: 330px;
+      height: 70px;
+      position: relative;
+     
+  }
+  .contact .detail .lable .para p{
+      font-size: 20px;
+  }
+  .contact .detail .lable input {
+    width: 330px;
+    height: 50px;
+    position: relative;
+  
+    font-size: 17px;
+  }
+  .contact .detail .lable textarea {
+    width: 330px;
+    height: 100px;
+    position: relative;
+    
+    font-size: 17px;
+  }
+  .contact .detail .lable .submit{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    
+    font-size: 15px;
+  }
+  .head3 h2{
+      margin-top: 4px;
+  }
+.footer h2{
+    font-size: 1px;
+}
+}
+
+
+
+
+/*   smaert phone */
+
+
+
+
+/* Banner section */
+.hero{
+    position:relative;
+    height: 500px;
+    background-image: url("bn.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.content{
+    position: absolute;
+    top:40%;
+    left:30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 10;
+   
+    
+}
+
+.content .head{
+    font-size: 40px;
+    color: white;
+    background-color: #e100f5;
+    text-align: center;
+    box-shadow: 3px 4px 8px 9px grey;
+}
+
+.content .btn2{
+    margin-top: 15px;
+    margin-left: 9rem;
+    width: 10rem;
+    text-align: center;
+
+   
+}
+
+
+ .content a{
+font-size: 22px;
+color: black;
+text-decoration: none;
+background-color: blueviolet;
+
+font-weight: bold;
+border:2px solid black;
+
+padding: 10px ;
+transition: .7s initial;
+
+
+}
+.content a:hover{
+    background: Transparent;
+   background-color: rgb(214, 219, 248);
+   color: black;
+    transition: .7s ease-in;
+}
+
+
+/* -----galllery---------------- */
+
+.gallery{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+ /* --all heading section ---------- */
+
+.head2{
+    text-align: center;
+    background-color: blueviolet;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    height: 50px;
+}
+.head2 h2{
+    padding-top: 4px;
+    font-size: 30px;
+    }
+    
+
+.head3 {
+    height: 50px;
+    text-align: center;
+    background-color: blueviolet;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    
+}
+.head3 h2{
+padding-top: 5px;
+font-size: 30px;
+}
+
+.gallery .item{
+    width: 200px;
+   
+    
+  
+}
+.item{
+    
+background-color: blueviolet;
+box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+border-radius: 20px;
+text-align: center;
+}
+.item img{
+   width: 100%;
+   height: 300px;
+   border-radius: 20px 20px 0px 0px;
+}
+.item li .fa{
+font-size: 30px;
+width: 30px;
+height: 40px;
+color: red;
+
+}
+.item span{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  
+   
+}
+.item .spbg{
+  margin-top: -5px;
+    background-color: #e100f5;
+}
+.item h3{
+   
+    font-size: 15px;
+    padding: 5px 0px 2px 5px;
+    
+}
+.item .fa-youtube{
+    color: rgb(245, 91, 91);
+    font-size: 20px;
+}
+.item .fa-instagram{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: horizontal;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.item .rmore {
+  
+
+margin-left: 50px;
+background-color: #e100f5;
+  width: 100px;
+  margin-top: 5px;
+  padding: 5px 5px 5px 13px;
+  border-radius: 10px 10px 0px 0px;
+}
+.item .rmore a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    
+    border-radius: 20px;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+  /*   ------contact----- */
+
+
+.detail .lable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+   
+ 
+}
+.lable .para p{
+    text-align: center;
+    font-size: 23px;
+      margin-top: 10px;
+}
+
+.lable .para{
+    height: 50px;
+    background-color: plum;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 700px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+
+.lable input{
+    width:650px ;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    
+    
+}
+.lable textarea{
+    width:650px;
+    font-size:20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+.submit{
+  height: 50px;
+  background-color: blueviolet;
+  width: 650px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+ margin-top: 2rem;
+
+}
+.submit li{
+list-style: none;
+margin-top: 10px;
+}
+.submit a{
+  
+    font-size:24px;
+   
+    color: black;
+    
+    text-decoration: none;
+   
+
+}
+.about .ab{
+display: flex;
+ margin-left: 18rem;
+ margin-bottom: 20px;
+ 
+}
+
+.ab .my img{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 30px 0px 0px 30px;
+
+}
+.ab .my{
+
+ border-radius: 190px;
+}
+.ab .am{
+ 
+   
+    background-color: plum;
+      border-radius: 0px 30px 30px 0px;
+       width: 750px;
+       height: 300px;
+   
+      
+}
+
+.ab .am p{
+
+
+ width: 700px;
+ font-size: 20px;
+
+}
+
+.footer{
+    background-color: blueviolet;
+    text-align: left;
+    height: 50px;
+    
+}
+.footer h2{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
